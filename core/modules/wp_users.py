@@ -75,7 +75,7 @@ class WPUser:
 				users.append(x)
 		if users != []:
 			for z in range(len(users)):
-				self.print_.dprint("ID: {} - Name: {}".format(z,users[z]))
+				self.print_.dprint(u"ID: {} - Name: {}".format(z,users[z]))
 			print ""
 		elif users == []:
 			self.print_.eprint("Not found users ")
