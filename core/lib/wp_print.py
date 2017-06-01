@@ -19,21 +19,21 @@ class WPPrint:
 
  	def aprint(self,string,flag="##"):
 		# flag = green 
-		print "{}{}{} {}{}{}".format(self.g,str(flag),self.e,self.nw,str(string),self.e)
+		print u"{}{}{} {}{}{}".format(self.g,flag,self.e,self.nw,string,self.e)
 
 	def bprint(self,string,flag="##"):
 		# flag = red
-		print "{}{}{} {}{}{}".format(self.r,str(flag),self.e,self.nw,str(string),self.e)
+		print u"{}{}{} {}{}{}".format(self.r,flag,self.e,self.nw,string,self.e)
 
 	def cprint(self,string,flag="##"):
 		# flag = yellow
-		print "{}{}{} {}{}{}".format(self.y,str(flag),self.e,self.nw,str(string),self.e)
+		print u"{}{}{} {}{}{}".format(self.y,flag,self.e,self.nw,string,self.e)
 
 	def dprint(self,string,flag="||"):
 		# flag = green
-		print "\t{}{}{} {}{}{}".format(self.g,str(flag),self.e,self.nw,str(string),self.e)
+		print u"\t{}{}{} {}{}{}".format(self.g,flag,self.e,self.nw,string,self.e)
 
 	def eprint(self,string,flag="||"):
 		# flag = red
-		print "\t{}{}{} {}{}{}".format(self.r,str(flag),self.e,self.nw,str(string),self.e)
+		print u"\t{}{}{} {}{}{}".format(self.r,flag,self.e,self.nw,string,self.e)
 

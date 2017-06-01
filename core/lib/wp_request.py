@@ -51,7 +51,7 @@ class WPRequest:
 			resp = urllib2.urlopen(req)
 		except urllib2.HTTPError,e:
 			resp = e 
-		return resp.read(),resp.geturl(),resp.getcode(),resp.info()
+		return resp.read().decode('utf-8'),resp.geturl(),resp.getcode(),resp.info()
 
 class NoRedirectHandler(urllib2.HTTPRedirectHandler):
 	def http_error_302(self,req,fp,code,msg,headers):
